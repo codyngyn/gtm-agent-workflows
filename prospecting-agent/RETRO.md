@@ -26,9 +26,24 @@
 
 A separate-model grader, outcome analysis by hook and ask, a daily scheduled run, and phone enrichment.
 
-## Update, Nov 4
+## Retro: making it public (Nov 3 to 5, 2026)
 
-- **A source check caught my own errors.** The researcher found four wrong details in my description of a new contact before any reached a draft.
-- **Triage only modeled hiring targets.** A contact I added on purpose was flagged. I added two categories: event contacts, and people who left a GTM role at a target company in the last 12 months.
-- **The privacy scan only knew contact names.** It now also blocks employers, events, schools, cities and people named in notes, from a gitignored list.
-- **Outcome metrics left the repo.** They are regenerated from the tracker for live conversations instead.
+### What worked
+
+- **Checking my claims, not just the agent's.** The researcher checked my own one-line description of a new contact against sources and found four wrong details. None reached a draft.
+- **The privacy scan caught the agent too.** It blocked an email address the agent had written into a config file. Rules that apply to every author are the point.
+- **Reading back every write.** Each subagent reports what it changed. I treated that report as a claim and checked the sheet before moving on. Every report matched, which is what made the next step safe to run.
+- **Regenerate before you delete.** I removed the results file only after a script reproduced every number in it from the tracker. Deleting stopped being a loss.
+
+### Where it failed
+
+- **Rules lagged behind the goal.** Triage only modeled hiring targets, so it flagged a contact I had added on purpose. I wrote two new categories instead of overriding the flag by hand.
+- **The agent shipped a bug its own test caught.** The first version of the link check missed links because of an escaping mistake. Testing it on four sample notes caught it before it ran on real drafts.
+- **Deleting a file doesn't delete its history.** Removed files stayed readable in old commits. A merged pull request keeps its commits even after a force-push. Getting a clean public record took a fresh repo.
+- **The framing changed three times in two days.** Each rewrite of the README was right, but the scoring rules still weight the factors from the first framing. Descriptions and rules drifted apart.
+
+### What I'd change
+
+1. **Decide what's public before the first commit.** Outcome metrics, identifying details and commit attribution are all easier to leave out than to remove.
+2. **Write the goal first, then the rules.** The scoring weights should follow from the stated goal, and a check should flag when they don't.
+3. **Keep one list of identifying terms from day one.** Employers, events, schools and people named in notes identify a contact as surely as a name does.
