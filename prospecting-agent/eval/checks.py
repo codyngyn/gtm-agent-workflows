@@ -4,8 +4,9 @@ Usage: python3 checks.py versions.json
 versions.json: list of {contact, version, author, format, text}
 
 Published as it ran from Oct 28, 2026, with two changes: the em dash pattern
-is written as the escape "\\u2014" instead of the literal character, and a
-check for links in connection notes was added on Nov 3, 2026.
+is written as the escape "\\u2014" instead of the literal character, and two
+checks were added on Nov 3, 2026: links in connection notes, and a referral
+mentioned without the role.
 Known issue: an ask written as a statement ("let's do a quick call") is
 flagged "No question or ask". Not yet fixed.
 """
@@ -37,6 +38,8 @@ def check(text, fmt="connection note"):
     for pat, label in BANNED:
         if re.search(pat, text, flags=re.I if "(?i)" not in pat else 0):
             issues.append(label)
+    if re.search(r"(?i)\breferred\b", text) and not re.search(r"(?i)\breferred for\b", text):
+        issues.append("Referral without the role (say 'referred for [role]')")
     if fmt.lower() == "connection note" and re.search(LINK, text, flags=re.I):
         issues.append("Link in a connection note (offer it, or send it after they accept)")
     q = ask_count(text)

@@ -25,6 +25,7 @@ Hook (specific to this person, taken from the research row) + Cody's background 
 ## Rules
 
 - Don't tell peers he is "applying." The goal is a conversation, not a referral form.
+- One exception: when a note says Cody was referred, it names the role: "was just referred for [role]". A referral without a role is vague, and the reader can't tell what it is for. The role comes from the research row or from Cody, never from a guess. Say "referred," never "applying."
 - One ask. Don't stack "would love to connect" on top of a question.
 - Use only facts that are in the research row. If a detail isn't verified (an award, a title, a date), leave it out.
 - Keep Cody's venture and corp dev background. Give credentials at the firm level and never inflate his own role.

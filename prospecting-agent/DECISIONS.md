@@ -31,6 +31,7 @@ Who:
 | One model with effort set per step | A different model per step | That is how I actually worked | Me |
 | Keep outcome metrics out of the repo; share them live | Publish the funnel | Interviewers and people I contacted will read this. Results need context a page can't give | Me |
 | No company names, no company-specific rules | Tailor to each reader | The repo is for every reader, including the people I contacted | Me |
+| Name the role whenever a note mentions a referral | Leave it implied | A referral with no role is vague. Added to the drafter and checked by `checks.py` | Me |
 | No links in connection notes; offer one, or link my site after they accept | Link in every note | A link costs characters and reads as a second ask | Me |
 | Triage also clears event contacts and recent alumni of target companies | Hiring targets only | Advisors and connectors were being flagged | Me |
 | Block employers, events, schools, cities and non-contact names in the privacy scan | Contact names only | Those details identify a contact as surely as a name | Me |
