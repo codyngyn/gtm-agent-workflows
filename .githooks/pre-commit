@@ -1,0 +1,14 @@
+#!/bin/sh
+# Runs the privacy scan on exactly what is staged. Enable once per clone:
+#   git config core.hooksPath .githooks
+root=$(git rev-parse --show-toplevel)
+tmp=$(mktemp -d)
+git checkout-index -a --prefix="$tmp/"
+python3 -I "$root/scripts/privacy_scan.py" "$tmp" --names "$root/data/names.txt" --terms "$root/data/terms.txt" | grep -v '^INFO'
+rc=$?
+status=$(python3 -I "$root/scripts/privacy_scan.py" "$tmp" --names "$root/data/names.txt" --terms "$root/data/terms.txt" >/dev/null 2>&1; echo $?)
+rm -rf "$tmp"
+if [ "$status" != "0" ]; then
+  echo "Commit blocked by privacy scan."
+  exit 1
+fi
