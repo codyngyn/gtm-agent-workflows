@@ -5,7 +5,7 @@ versions.json: list of {contact, version, author, format, text}
 
 Published as it ran from Oct 28, 2026, with two changes: the em dash pattern
 is written as the escape "\\u2014" instead of the literal character, and a
-check for links in connection notes was added on Nov 4, 2026.
+check for links in connection notes was added on Nov 3, 2026.
 Known issue: an ask written as a statement ("let's do a quick call") is
 flagged "No question or ask". Not yet fixed.
 """

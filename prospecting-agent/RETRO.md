@@ -26,7 +26,7 @@
 
 A separate-model grader, outcome analysis by hook and ask, a daily scheduled run, and phone enrichment.
 
-## Retro: making it public (Nov 3 to 5, 2026)
+## Retro: making it public (Nov 1 to 3, 2026)
 
 ### What worked
 
@@ -40,7 +40,7 @@ A separate-model grader, outcome analysis by hook and ask, a daily scheduled run
 - **Rules lagged behind the goal.** Triage only modeled hiring targets, so it flagged a contact I had added on purpose. I wrote two new categories instead of overriding the flag by hand.
 - **The agent shipped a bug its own test caught.** The first version of the link check missed links because of an escaping mistake. Testing it on four sample notes caught it before it ran on real drafts.
 - **Deleting a file doesn't delete its history.** Removed files stayed readable in old commits. A merged pull request keeps its commits even after a force-push. Getting a clean public record took a fresh repo.
-- **The framing changed three times in two days.** Each rewrite of the README was right, but the scoring rules still weight the factors from the first framing. Descriptions and rules drifted apart.
+- **The framing changed three times in one day.** Each rewrite of the README was right, but the scoring rules still weight the factors from the first framing. Descriptions and rules drifted apart.
 
 ### What I'd change
 

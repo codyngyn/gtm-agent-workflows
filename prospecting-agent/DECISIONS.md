@@ -23,7 +23,7 @@ Who:
 | Version every draft and run deterministic checks | Keep drafts only in chat | First drafts were being overwritten, so nothing could be measured | Me (scope and timing); agent built it |
 | Company names come from Sales Navigator, not search tools | Trust search results | A search tool returned the wrong employer for a contact | Agent proposed, after I caught the error |
 
-## For this repo (Nov 1, updated Nov 4)
+## For this repo (Nov 1, updated Nov 3)
 
 | Decision | Alternatives | Why | Who |
 |---|---|---|---|

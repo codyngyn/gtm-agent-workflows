@@ -1,4 +1,4 @@
-# 2026-11-04: triage categories, privacy scan, link rule, metrics out
+# 2026-11-03: triage categories, privacy scan, link rule, metrics out
 
 Environment: Claude Code, cloud session, with Google Sheets, Gmail, Granola, Exa and TinyFish connectors. Each subagent ran with the model and effort in its own file's frontmatter.
 Subagents run: `triager`, then `scorer`, on one contact.
