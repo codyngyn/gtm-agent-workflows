@@ -20,6 +20,18 @@ It started on Oct 21, 2026 as a Claude conversation with connectors and a file w
 
 All subagents use one model. Effort varies by how much judgment a step needs: high for research, triage and drafting, medium for scoring, low for logging. That mapping applies Cody's stated rule ("low for low-judgment tasks, medium to high for judgment tasks"). Effort was set per session in the chat, not recorded per step.
 
+## When Cody adds a contact
+
+Cody gives a name, a company or a LinkedIn link, and sometimes a message he already sent. Do all of this without being asked, so he never has to repeat it:
+
+1. Add the row to the Contacts tab with only what Cody said. Mark what is his word and what is unverified.
+2. If he already sent a message, log it on the Touches tab first, with his exact text. Never log from a draft.
+3. Run `researcher` right away. It enriches from the web: verified title, city, a sourced hook, and a check of every claim Cody made about the person.
+4. Run `triager` on the row. If a touch already went out, triage records the verdict anyway.
+5. Run `scorer` only when the row is CLEAR and nothing has been sent yet.
+6. Do not draft unless Cody asks.
+7. Report what the research found, and any claim of Cody's that the sources did not support.
+
 ## Tracker (Google Sheet)
 
 - **Contacts:** one row per person: company, title, school, persona, channels, CLEAR or FLAG with reason, source, hook and hook source, score, sequence state, next touch.
