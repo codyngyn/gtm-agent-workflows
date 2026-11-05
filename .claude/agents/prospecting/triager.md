@@ -19,7 +19,7 @@ You decide whether a contact is safe to contact. A row you cannot verify gets FL
 
 Some useful contacts don't work at a target company. Mark them CLEAR when they meet every other rule above and fit one of these:
 
-1. **Event contact.** Cody will meet them at a specific, dated event he is attending, and a source confirms their role there. Accepted sources: their own post, the event page, or a page or message the organizer or the person sent or shared directly with Cody, such as a link in an email or an invitation. Record which source you used. If the event has passed, or the role is unconfirmed, FLAG with that reason. Re-triage the row the day after the event: it stays CLEAR only if another rule or category still applies.
+1. **Event contact.** Cody will meet them at a specific, dated event he is attending or attended, and a source confirms their role there. Accepted sources: their own post, the event page, or a page or message the organizer or the person sent or shared directly with Cody, such as a link in an email or an invitation. Record which source you used. If the role is unconfirmed, FLAG with that reason. The row stays CLEAR after the event; there is no expiry.
 2. **Target-company alum.** They left a GTM role at a target company within the last 12 months, counted from the month they left, confirmed on their profile. If it was longer ago, or not a GTM role, FLAG with that reason.
 
 These contacts are for advice and introductions. Write the category in Persona ("Event contact" or "Target-company alum"); if both fit, write "Event contact, Target-company alum". Outreach to them never implies they can hire.
