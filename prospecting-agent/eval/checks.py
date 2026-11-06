@@ -38,7 +38,7 @@ def check(text, fmt="connection note"):
     for pat, label in BANNED:
         if re.search(pat, text, flags=re.I if "(?i)" not in pat else 0):
             issues.append(label)
-    if re.search(r"(?i)\breferred\b", text) and not re.search(r"(?i)\breferred for\b", text):
+    if re.search(r"(?i)\breferred\b", text) and not re.search(r"(?i)\breferred\b(\W+\w+){0,4}?\W+for\b", text):
         issues.append("Referral without the role (say 'referred for [role]')")
     if fmt.lower() == "connection note" and re.search(LINK, text, flags=re.I):
         issues.append("Link in a connection note (offer it, or send it after they accept)")
