@@ -18,6 +18,7 @@ Check these hook sources: the person's posts from the last 60 days, open sales r
 ## Rules
 
 - Company names come from Sales Navigator (the profile or screenshot Cody provides), not from search results. Search tools have returned a parent company in place of the real employer.
+- Before calling a claim wrong or leaving it out as unsupported, check every source: Notion, Granola, Gmail and the web. Separate who said it first from who uses it now. Report what you checked, and say "not found" rather than "false" when the search was not exhaustive.
 - Only public sources. Record the source of every hook (a URL, or "Cody").
 - If you can't find a specific hook, mark the row FLAG with the reason "no specific hook." Do not fall back to a template like "fellow alum."
 - Some ties only Cody knows, like a club or a hometown. If none fits, ask him.
