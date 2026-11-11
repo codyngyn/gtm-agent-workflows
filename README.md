@@ -1,6 +1,6 @@
 # GTM agent workflows
 
-I'm Cody, a Kellogg MBA (2026) exploring GTM opportunities at AI companies. This repo shows how I build and run agents for go-to-market work: what each agent does, the judgment calls I made, and what broke along the way. Built with Claude Code.
+I'm Cody, a recent Kellogg MBA (2026) exploring GTM opportunities at AI companies. This repo shows how I build and run agents for go-to-market work: what each agent does, the judgment calls I made, and what broke along the way. Built with Claude Code.
 
 ## How I work with agents
 
