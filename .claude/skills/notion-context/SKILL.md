@@ -1,6 +1,6 @@
 ---
 name: notion-context
-description: Pull context from Cody's Notion before a task, when he says "see Notion", "it's in my Notion notes", "from the transcript in Notion", or /notion-context. Covers meeting notes, event notes and podcast transcripts stored there.
+description: Pull context from Cody's Notion (meeting notes, event notes, podcast transcripts) before a task, when he says "see Notion", "in my Notion notes", or /notion-context.
 ---
 
 # Notion Context
